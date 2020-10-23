@@ -392,7 +392,9 @@
                                 e.preventDefault();
 
                                 var data = getFormData($form);
+                                console.log(data);
                                 localStorage.setItem('order', JSON.stringify(data));
+                                console.log('order');
                                 if (data.service.toLowerCase().includes('priest'))
                                     window.location.replace("./booking.html");
                                 else
