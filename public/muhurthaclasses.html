@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Astrology Classes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/zerogrid.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/contactform.css" type="text/css" media="all">
+    <link href='https://fonts.googleapis.com/css?family=Lemon' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Uncial Antiqua' rel='stylesheet'>
+    <script type="text/javascript" src="js/jquery-1.6.js"></script>
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-replace.js"></script>
+    <script type="text/javascript" src="js/Forum_400.font.js"></script>
+    <script type="text/javascript" src="js/atooltip.jquery.js"></script>
+    <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</head>
+
+<body id="page5">
+    <div class="body6">
+        <div class="body1">
+            <div class="main zerogrid">
+                <!-- header -->
+                <!--header>
+                    <h1>
+                        <a href="index.html" id="logo"><img src="images/logo.png" /></a>
+                    </h1>
+
+                    <nav>
+                        <ul id="top_nav">
+                            <a href="#" class="button1">Book Appointment</a>
+                        </ul>
+                    </nav>
+
+                </header-->
+
+
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html" class="active" style="font-family: sans-serif;">Home</a>
+                    <a href="about.html" style="font-family: sans-serif;">About Us</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Services
+          </button>
+                        <div class="dropdown-content">
+                            <a href="astrology-services.html" style="font-family: sans-serif;">Astrology Services</a>
+                            <a href="vasthu.html" style="font-family: sans-serif;">Vaastu Services</a>
+                            <a href="virtualservices.html" style="font-family: sans-serif;">Priest Services</a>
+                            <a href="#popupforVirtualServices" style="font-family: sans-serif;">Virtual Services</a>
+                            <a href="#">Muhurtha Services</a>
+                        </div>
+                    </div>
+                    <!--a href="Services.html">Services</a-->
+                    <div class="dropdown">
+                        <button class="dropbtn">Classes
+            </button>
+                        <div class="dropdown-content">
+                            <a href="vedic_classes.html" style="font-family: sans-serif;">Vedic Classes</a>
+                            <a href="astrology_classes.html" style="font-family: sans-serif;">Astrology Classes</a>
+                            <a href="vasthuclasses.html" style="font-family: sans-serif;">Vaastu Classes</a>
+                            <!--a href="#">Virtual Services</a-->
+                            <a href="muhurthaclasses.html" style="font-family: sans-serif;">Muhurtha Classes</a>
+                        </div>
+                    </div>
+                    <!--a href="predictions.html">Predictions</a-->
+                    <a href="gallery.html" style="font-family: sans-serif;">Gallery</a>
+                    <a href="blog.html" style="font-family: sans-serif;">Blog</a>
+                    <a href="contact.html" style="font-family: sans-serif;">Contact Us</a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
+                <!-- / header -->
+                <!-- content -->
+                <div class="box">
+
+                    <div id="appointment_form">
+                        <h2 style="font-family: sans-serif;"><span>Muhurtha Classes</span></h2>
+                        <br>
+                        <form name="form2" id="ff" method="post" action="">
+                            <label style="color: white; font-family: sans-serif;">
+         Name *:
+         <input type="text" placeholder="Please enter your name" name="name" id="name" required>
+         </label>
+
+                            <label style="color: white; font-family: sans-serif;">
+         Email *:
+         <input type="email" placeholder="Enter your Email ID" name="email" id="email" required>
+         </label>
+
+                            <label style="color: white; font-family: sans-serif;">
+         Mobile Number *:
+         <input type="phone" placeholder="Enter Your Number" name="mobile" id="mobile" required>
+         </label>
+
+                            <label>
+                            <input type="hidden" name="gender" value="male">
+            </label></br>
+                            </label>
+
+                            <label>
+           
+            <input type="hidden"  name="DOB" id="DOB" value="01-01-1900">
+        </label>
+
+                            <label>
+            
+            <input type="hidden"  name="timeofbirth" id="timeofbirth" value="01:01">
+        </label>
+
+                            <label>
+            
+            <input type="hidden" placeholder="Enter Your place of birth" name="place" id="place" value="-" >
+        </label>
+
+                            <label>
+         
+                            <label>
+            
+                                <input type="hidden" placeholder="Enter Your place of birth" name="service" id="service" value="muhurtha classes">
+                            </label>
+                            </label>
+
+
+                            <label>
+            <input type="hidden" name="consultation" value="offline"></label>
+
+                            <label style="color: white; font-family: sans-serif;">
+         Message *:
+         <input type="text" placeholder="Please enter your message" id="message" name="message">
+         </label>
+
+                            <input class="sendButton" type="submit" name="Submit" value="Send" id="bookappointmentbtn">
+
+
+                        </form>
+                        </br>
+                        </br>
+                        <script>
+                            function getFormData($form) {
+                                var unindexed_array = $form.serializeArray();
+                                var indexed_array = {};
+
+                                $.map(unindexed_array, function(n, i) {
+                                    indexed_array[n['name']] = n['value'];
+                                });
+
+                                return indexed_array;
+                            }
+                            var $form = $("#ff");
+                            $('#bookappointmentbtn').click(function(e) {
+                                e.preventDefault();
+
+                                var data = getFormData($form);
+                                console.log(data)
+                                localStorage.setItem('order', JSON.stringify(data));
+                                // if (data.service.toLowerCase().includes('priest'))
+                                window.location.replace("./booking.html");
+                                //  else
+                                //     window.location.replace("./checkout.html");
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </article>
+    </div>
+    </div>
+    </div>
+    <div class="body2">
+        <div class="main zerogrid">
+            <article id="content2">
+                <section>
+                    <div class="wrapper">
+
+                        <!--div class="col-2-3"><div class="wrap-col mag-1">	
+						<h2>Info</h2>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						</p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					</div></div-->
+                    </div>
+                </section>
+            </article>
+            <!-- / content -->
+        </div>
+    </div>
+    <div class="body3">
+
+        <div class="main zerogrid">
+            <!-- footer -->
+            <footer>
+                <div class="wrapper">
+                    <div class="col-1-1">
+                        <div class="wrap-col">
+                            <h2>Our Contacts</h2>
+                            <div class="wrapper pad_bot1">
+                                <!--p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p-->
+                                <p class="address">
+
+                                    <!--span>Freephone:</span>    +1 012 345 6789<br-->
+                                    <span>Telephone:</span> +1 302-588-5890<br>
+                                    <span>E-mail:</span> <a href="mailto:">ydikam21@gmail.com.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="wrapper">
+                            <!--section class="col-2-3"><div class="wrap-col">
+                <span>Telephone:</span>    +1 302-588-5890<br>
+                    <span>E-mail:</span>             <a href="mailto:">ydikam21@gmail.com.com</a>
+              </div></section-->
+                            <section class="col-1-3">
+                                <div class="wrap-col">
+                                    <h3>Follow Us </h3>
+                                    <ul id="icons">
+                                        <li>
+                                            <a href="#" class="normaltip" title="Facebook"><img src="images/icon1.gif" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="normaltip" title="Linkedin"><img src="images/icon2.gif" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="normaltip" title="Twitter"><img src="images/icon3.gif" alt=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- {%FOOTER_LINK} -->
+                    </footer>
+                </div>
+                <!-- {%FOOTER_LINK} -->
+            </footer>
+            <!-- / footer -->
+        </div>
+        <div id="popupforVasthu" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <div id="appointment_form">
+                        <br>
+                        <form name="form2" id="ff" method="post" action="">
+                            <label>
+             Name *:
+             <input type="text" placeholder="Please enter your name" name="name" id="name" required>
+             </label>
+
+                            <label>
+             Email *:
+             <input type="email" placeholder="Enter your Email ID" name="email" id="email" required>
+             </label>
+
+                            <label>
+             Mobile Number *:
+             <input type="phone" placeholder="Enter Your Number" name="mobile" id="mobile" required>
+             </label>
+
+                            <select name="dropdown">
+                <option value = "Parasara hors sastram" selected>Parasara hors sastram</option>
+                <option value = "KP System">KP System</option>
+                <option value = "Naadi System">Naadi System</option>
+             </select>
+
+                            <!--label>Gender* :
+              <select>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              </select></label></br>
+            </label-->
+
+                            <!--label>
+              Date Of Birth *:
+              <input type="date"  name="DOB" id="service" required>
+            </label-->
+
+                            <!--label>
+              Time Of Birth *:
+              <input type="time"  name="timeofbirth" id="service" required>
+            </label-->
+
+                            <!--label>
+              Place Of Birth *:
+              <input type="text" placeholder="Enter Your place of birth" name="palce" id="service" required>
+            </label-->
+
+                            <label>
+             Address *:
+             <input type="text" placeholder="Enter Your Address" name="service" id="service" required>
+             </label>
+
+                            <label>
+             Message *:
+             <input type="text" placeholder="Please enter your message" id="message">
+             </label>
+                            <p>* Please note that the Appointment should be made before 7 days.</p>
+                            <input class="sendButton" type="submit" name="Submit" value="Send">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popupforVirtualServices" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <div id="appointment_form">
+                        <br>
+                        <form name="form2" id="ff" method="post" action="">
+                            <label>
+             Name *:
+             <input type="text" placeholder="Please enter your name" name="name" id="name" required>
+             </label>
+
+                            <label>
+             Email *:
+             <input type="email" placeholder="Enter your Email ID" name="email" id="email" required>
+             </label>
+
+                            <label>
+             Mobile Number *:
+             <input type="phone" placeholder="Enter Your Number" name="mobile" id="mobile" required>
+             </label>
+
+                            <!--label>Gender* :
+              <select>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              </select></label></br>
+            </label-->
+
+                            <!--label>
+              Date Of Birth *:
+              <input type="date"  name="DOB" id="service" required>
+            </label-->
+
+                            <!--label>
+              Time Of Birth *:
+              <input type="time"  name="timeofbirth" id="service" required>
+            </label-->
+
+                            <!--label>
+              Place Of Birth *:
+              <input type="text" placeholder="Enter Your place of birth" name="palce" id="service" required>
+            </label-->
+
+                            <!--label>
+             Address *:
+             <input type="text" placeholder="Enter Your Address" name="service" id="service" required>
+             </label-->
+
+                            <label>
+             Message *:
+             <input type="text" placeholder="Let us know which virtual services can we asist you with" id="message">
+             </label>
+                            <p>* Please note that the Appointment should be made before 7 days.</p>
+                            <input class="sendButton" type="submit" name="Submit" value="Send">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        Cufon.now();
+    </script>
+</body>
+
+</html>
