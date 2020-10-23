@@ -1,7 +1,7 @@
 $(document).ready(function() {
     let order = JSON.parse(localStorage.getItem('order'));
     let pricing = {
-        'astrology': { 'online': 0.01, 'offline': 1 },
+        'astrology': { 'online': 1, 'offline': 1 },
         'vasthu': { 'online': 1, 'offline': 1 }
     };
     let consultationType = {
