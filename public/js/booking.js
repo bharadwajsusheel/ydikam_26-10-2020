@@ -8,16 +8,33 @@ $(document).ready(function() {
     delete order.place;
     console.log(order);
     // alert(order);
-    $.ajax({
-        url: "https://yidikam-sendmail.herokuapp.com/api/appointment/book",
-        type: "POST",
-        data: order,
-        success: function(response) {
-            window.location.replace("./confirmation.html");
-            localStorage.removeItem('order');
-        },
-        error: function(jqXHR, response, errorThrown) {
-            alert(response, errorThrown);
-        }
-    });
+
+    if (order.service == 'Query from contact page') {
+        $.ajax({
+            url: "https://yidikam-sendmail.herokuapp.com/api/appointment/book",
+            type: "POST",
+            data: order,
+            success: function(response) {
+                window.location.replace("./contact_Confirmation.html");
+                localStorage.removeItem('order');
+            },
+            error: function(jqXHR, response, errorThrown) {
+                alert(response, errorThrown);
+            }
+        });
+    } else {
+
+        $.ajax({
+            url: "https://yidikam-sendmail.herokuapp.com/api/appointment/book",
+            type: "POST",
+            data: order,
+            success: function(response) {
+                window.location.replace("./confirmation.html");
+                localStorage.removeItem('order');
+            },
+            error: function(jqXHR, response, errorThrown) {
+                alert(response, errorThrown);
+            }
+        });
+    }
 });
