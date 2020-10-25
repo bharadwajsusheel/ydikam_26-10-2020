@@ -310,36 +310,11 @@
 						 <input type="text" placeholder="Please enter your message" id="message">
 						 </label>
                             <p>* Please note that the Appointment should be made before 7 days.</p>
-                            <input id="contactbtn" class="sendButton" type="submit" name="Submit" value="Send" onclick="getFormData()">
+                            <input id="contactbtn" class="sendButton" type="submit" name="Submit" value="Send">
 
 
                         </form>
 
-                        <script>
-                            function getFormData($form) {
-                                var unindexed_array = $form.serializeArray();
-                                var indexed_array = {};
-
-                                $.map(unindexed_array, function(n, i) {
-                                    indexed_array[n['name']] = n['value'];
-                                });
-
-                                return indexed_array;
-                            }
-                            var $form = $("#ff");
-                            $('#contactbtn').click(function(e) {
-                                e.preventDefault();
-
-                                var data = getFormData($form);
-                                console.log(data);
-                                localStorage.setItem('order', JSON.stringify(data));
-                                console.log('order');
-                                // if (data.service.toLowerCase().includes('priest'))
-                                window.location.replace("./contact_booking.html");
-                                // else
-                                //     window.location.replace("./checkout.html");
-                            });
-                        </script>
                     </div>
                 </div>
             </div>
