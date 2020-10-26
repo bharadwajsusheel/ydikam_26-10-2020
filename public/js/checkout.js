@@ -1,8 +1,8 @@
 $(document).ready(function() {
     let order = JSON.parse(localStorage.getItem('order'));
     let pricing = {
-        'astrology': { 'online': 1, 'offline': 1 },
-        'vasthu': { 'online': 1, 'offline': 1 }
+        'astrology': { 'online': 51, 'offline': 101 },
+        'vasthu': { 'online': 101, 'offline': 151 }
     };
     let consultationType = {
         'online': 'Virtual',
